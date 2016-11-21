@@ -29,11 +29,13 @@ No endpoint call should result in an iteration of whole set of keys i.e. no en
 
 # Available Routes:
 
-            Prefix Verb   URI Pattern                        Controller#Action
- generate_api_keys POST   /api/keys/generate(.:format)       api/v1/keys#generate_keys {:format=>:json}
-   assign_api_keys PUT    /api/keys/assign(.:format)         api/v1/keys#assign {:format=>:json}
-   release_api_key PUT    /api/keys/:id/release(.:format)    api/v1/keys#release {:format=>:json}
-keep_alive_api_key PUT    /api/keys/:id/keep-alive(.:format) api/v1/keys#keep_alive {:format=>:json}
-           api_key DELETE /api/keys/:id(.:format)            api/v1/keys#destroy {:format=>:json}
+            Prefix             Verb   URI Pattern                        Controller#Action
+            generate_api_keys  POST   /api/keys/generate(.:format)       api/v1/keys#generate_keys {:format=>:json}
+            assign_api_keys    PUT    /api/keys/assign(.:format)         api/v1/keys#assign {:format=>:json}
+            release_api_key    PUT    /api/keys/:id/release(.:format)    api/v1/keys#release {:format=>:json}
+            keep_alive_api_key PUT    /api/keys/:id/keep-alive(.:format) api/v1/keys#keep_alive {:format=>:json}
+            api_key            DELETE /api/keys/:id(.:format)            api/v1/keys#destroy {:format=>:json}
+            
+ 
 
 
