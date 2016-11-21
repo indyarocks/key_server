@@ -4,7 +4,7 @@
 
 * Rails Version: 5.0.0.1
 
-# Problem statement:
+# Statement:
 
 Write a server which can generate random api keys, assign them for usage and release them after sometime. Following endpoints should be available on the server to interact with it.
 
